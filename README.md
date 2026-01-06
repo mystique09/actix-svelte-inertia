@@ -14,13 +14,12 @@ Full-stack Rust + TypeScript template with Actix-web, Svelte (Vite), and Inertia
 ├── Cargo.toml              # Rust project config
 ├── justfile                # Task runner commands
 ├── src/                    # Rust source
-│   └── server.rs           # Actix-web server
+│   └── main.rs             # Actix-web server
 ├── web/                    # Frontend Vite project
 │   ├── src/
 │   ├── dist/               # Built frontend assets
 │   └── package.json
 ├── target/                 # Rust build output
-└── output/                 # Production deployment folder
 ```
 
 ## Commands
