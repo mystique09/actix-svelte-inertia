@@ -5,7 +5,7 @@ Full-stack Rust + TypeScript template with Actix-web, Svelte (Vite), and Inertia
 ## Tech Stack
 
 - **Backend**: Rust, Actix-web, Inertia.js
-- **Frontend**: TypeScript, React, Vite, Inertia.js
+- **Frontend**: TypeScript, Svelte, Vite, Inertia.js
 
 ## Project Structure
 
