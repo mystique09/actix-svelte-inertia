@@ -2,8 +2,6 @@ mod config;
 mod server;
 mod types;
 
-use std::sync::Arc;
-
 use actix_web::{HttpServer, dev::ServerHandle, rt::signal};
 use tracing::{info, subscriber::set_global_default};
 use tracing_log::LogTracer;
@@ -18,7 +16,6 @@ async fn main() -> eyre::Result<()> {
     dotenvy::dotenv()?;
 
     let config = WebConfig::from_env()?;
-    let config = Arc::new(config);
 
     let server = HttpServer::new(move || create_web_service())
         .workers(5)

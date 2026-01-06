@@ -31,7 +31,7 @@ Full-stack Rust + TypeScript template with Actix-web, Svelte (Vite), and Inertia
 just run
 ```
 
-Runs Vite dev server and Cargo dev server concurrently.
+Runs Vite dev server and Cargo dev server concurrently. Visit [http://localhost:8080](http://localhost:8080) to preview.
 
 ### Production Build
 
