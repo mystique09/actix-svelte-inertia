@@ -72,11 +72,20 @@ pub fn create_web_service() -> App<
     app
 }
 
+#[derive(Serialize)]
+struct HomepageProps {
+    message: String,
+}
+
 async fn index(req: HttpRequest) -> impl Responder {
+    let props = HomepageProps {
+        message: "Hello, from Actix-Svelte-Inertia".to_string(),
+    };
+
     if req.headers().contains_key("x-inertia") {
-        InertiaResponder::new("App", Empty).respond_to(&req)
+        InertiaResponder::new("App", props).respond_to(&req)
     } else {
-        response_with_html(&req, Empty, "App".to_string())
+        response_with_html(&req, props, "App".to_string())
     }
 }
 

@@ -13,3 +13,10 @@
   font-display: swap;
   src: url("/CalSans-SemiBold.woff2") format("woff2");
 }
+
+@theme inline {
+  --font-sans: "Inter", "sans-serif";
+  --font-mono: "Source Code Pro", "monospace";
+  --font-alt: "Courier", "sans-serif";
+  --font-display: "Cal Sans", "sans-serif";
+}
